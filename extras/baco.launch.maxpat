@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 583.0, 537.0, 360.0, 220.0 ],
+		"rect" : [ 143.0, 892.0, 360.0, 220.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,8 +46,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 225.0, 61.0, 22.0 ],
-					"text" : "baco.gain"
+					"patching_rect" : [ 165.0, 225.0, 68.0, 22.0 ],
+					"text" : "baco.gain~"
 				}
 
 			}
@@ -59,9 +59,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 225.0, 67.0, 22.0 ],
-					"presentation_linecount" : 2,
-					"text" : "baco.curve"
+					"patching_rect" : [ 90.0, 225.0, 74.0, 22.0 ],
+					"text" : "baco.curve~"
 				}
 
 			}
@@ -73,8 +72,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 30.0, 225.0, 58.0, 22.0 ],
-					"text" : "baco.rms"
+					"patching_rect" : [ 30.0, 225.0, 65.0, 22.0 ],
+					"text" : "baco.rms~"
 				}
 
 			}
@@ -134,20 +133,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 1,
-					"fontsize" : 38.0,
-					"id" : "obj-20",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 120.0, 15.0, 114.0, 49.0 ],
-					"text" : "BACo"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.235, 0.235, 0.235, 1.0 ],
+					"bgcolor" : [ 0.235294117647059, 0.235294117647059, 0.235294117647059, 1.0 ],
 					"fontface" : 1,
 					"fontsize" : 13.0,
 					"id" : "obj-17",
@@ -160,32 +146,17 @@
 					"patching_rect" : [ 30.0, 165.0, 180.0, 21.698114216327667 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 360.0, 134.0, 180.0, 45.0 ],
-					"saved_attribute_attributes" : 					{
-						"bgcolor" : 						{
-							"expression" : "themecolor.theme_bubble_bgcolor"
-						}
-,
-						"textoncolor" : 						{
-							"expression" : "themecolor.theme_textcolor"
-						}
-,
-						"textovercolor" : 						{
-							"expression" : "themecolor.theme_color"
-						}
-
-					}
-,
 					"text" : "Attack/release controller",
 					"texton" : "Attack/release controller",
-					"textoncolor" : [ 0.85, 0.85, 0.85, 1.0 ],
-					"textovercolor" : [ 0.618934978328545, 0.744701397656435, 0.953750108255376, 1.0 ],
+					"textoncolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ],
+					"textovercolor" : [ 0.619607843137255, 0.745098039215686, 0.952941176470588, 1.0 ],
 					"usetextovercolor" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.235, 0.235, 0.235, 1.0 ],
+					"bgcolor" : [ 0.235294117647059, 0.235294117647059, 0.235294117647059, 1.0 ],
 					"fontface" : 1,
 					"fontsize" : 13.0,
 					"id" : "obj-16",
@@ -198,32 +169,17 @@
 					"patching_rect" : [ 30.0, 120.0, 180.0, 21.698114216327667 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 359.0, 94.0, 180.0, 45.0 ],
-					"saved_attribute_attributes" : 					{
-						"bgcolor" : 						{
-							"expression" : "themecolor.theme_bubble_bgcolor"
-						}
-,
-						"textoncolor" : 						{
-							"expression" : "themecolor.theme_textcolor"
-						}
-,
-						"textovercolor" : 						{
-							"expression" : "themecolor.theme_color"
-						}
-
-					}
-,
 					"text" : "Static compression curve",
 					"texton" : "Static compression curve",
-					"textoncolor" : [ 0.85, 0.85, 0.85, 1.0 ],
-					"textovercolor" : [ 0.618934978328545, 0.744701397656435, 0.953750108255376, 1.0 ],
+					"textoncolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ],
+					"textovercolor" : [ 0.619607843137255, 0.745098039215686, 0.952941176470588, 1.0 ],
 					"usetextovercolor" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.235, 0.235, 0.235, 1.0 ],
+					"bgcolor" : [ 0.235294117647059, 0.235294117647059, 0.235294117647059, 1.0 ],
 					"fontface" : 1,
 					"fontsize" : 13.0,
 					"id" : "obj-18",
@@ -234,25 +190,10 @@
 					"outputmode" : 0,
 					"parameter_enable" : 0,
 					"patching_rect" : [ 30.0, 75.0, 180.0, 21.698114216327667 ],
-					"saved_attribute_attributes" : 					{
-						"bgcolor" : 						{
-							"expression" : "themecolor.theme_bubble_bgcolor"
-						}
-,
-						"textoncolor" : 						{
-							"expression" : "themecolor.theme_textcolor"
-						}
-,
-						"textovercolor" : 						{
-							"expression" : "themecolor.theme_color"
-						}
-
-					}
-,
 					"text" : "RMS detector",
 					"texton" : "RMS detector",
-					"textoncolor" : [ 0.85, 0.85, 0.85, 1.0 ],
-					"textovercolor" : [ 0.618934978328545, 0.744701397656435, 0.953750108255376, 1.0 ],
+					"textoncolor" : [ 0.850980392156863, 0.850980392156863, 0.850980392156863, 1.0 ],
+					"textovercolor" : [ 0.619607843137255, 0.745098039215686, 0.952941176470588, 1.0 ],
 					"usetextovercolor" : 1
 				}
 
@@ -312,7 +253,7 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -333,6 +274,120 @@
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 233.0, 75.0, 88.0, 22.0 ],
 					"text" : "gen~ baco.rms"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 38.0,
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 120.0, 15.0, 114.0, 49.0 ],
+					"text" : "   A",
+					"textcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 38.0,
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 125.0, 15.0, 114.0, 49.0 ],
+					"text" : "     Co",
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 38.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 123.0, 15.0, 114.0, 49.0 ],
+					"text" : "B",
+					"textcolor" : [ 0.92549, 0.364706, 0.341176, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 38.0,
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 125.0, 14.0, 114.0, 49.0 ],
+					"text" : "BACo",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"id" : "obj-5",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 120.0, 15.0, 120.0, 45.0 ],
+					"proportion" : 0.5,
+					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : "themecolor.theme_bubble_bgcolor"
+						}
+
+					}
+
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"id" : "obj-9",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 34.0, 360.0, 8.0 ],
+					"proportion" : 0.5,
+					"rounded" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"id" : "obj-11",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 0.0, 39.0, 360.0, 186.0 ],
+					"proportion" : 0.5,
+					"saved_attribute_attributes" : 					{
+						"bgfillcolor" : 						{
+							"expression" : "themecolor.theme_bubble_bgcolor"
+						}
+
+					}
+
 				}
 
 			}
@@ -436,22 +491,22 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "baco.curve.gendsp",
-				"bootpath" : "~/Desktop/BACo",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/BACo/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "baco.gain.gendsp",
-				"bootpath" : "~/Desktop/BACo",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/BACo/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "baco.rms.gendsp",
-				"bootpath" : "~/Desktop/BACo",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Max 8/Packages/BACo/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}

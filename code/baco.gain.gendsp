@@ -70,8 +70,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 45.0, 87.0, 22.0 ],
-					"text" : "Param release"
+					"patching_rect" : [ 225.0, 45.0, 210.0, 22.0 ],
+					"text" : "Param release @min 0 @default 0.08"
 				}
 
 			}
@@ -83,8 +83,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.0, 15.0, 79.0, 22.0 ],
-					"text" : "Param attack"
+					"patching_rect" : [ 225.0, 15.0, 209.0, 22.0 ],
+					"text" : "Param attack @min 0 @default 0.008"
 				}
 
 			}

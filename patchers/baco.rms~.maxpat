@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 874.0, 292.0, 281.0, 195.0 ],
+		"rect" : [ 874.0, 292.0, 338.0, 210.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 173.0, 90.0, 66.0, 22.0 ],
+					"text" : "route done"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",
@@ -69,8 +81,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 120.0, 60.0, 144.0, 22.0 ],
-					"text" : "patcherargs @window 16"
+					"patching_rect" : [ 120.0, 60.0, 72.0, 22.0 ],
+					"text" : "patcherargs"
 				}
 
 			}
@@ -78,11 +90,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 150.0, 30.0, 30.0 ]
+					"patching_rect" : [ 15.0, 165.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -90,11 +102,11 @@
 				"box" : 				{
 					"comment" : "(signal) ",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 15.0, 15.0, 30.0, 30.0 ]
 				}
 
@@ -107,7 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 15.0, 120.0, 88.0, 22.0 ],
+					"patching_rect" : [ 15.0, 135.0, 88.0, 22.0 ],
 					"text" : "gen~ baco.rms"
 				}
 
@@ -129,8 +141,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-4", 0 ]
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-4", 1 ]
 				}
 
 			}
@@ -155,16 +167,14 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "baco.rms.gendsp",
-				"bootpath" : "~/Desktop/BACo",
-				"patcherrelativepath" : ".",
-				"type" : "gDSP",
-				"implicit" : 1
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-9", 1 ]
+				}
+
 			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
