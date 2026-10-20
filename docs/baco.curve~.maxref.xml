@@ -1,0 +1,66 @@
+
+<c74object name="baco.curve~">
+	<digest>Static compression curve</digest>
+	<description>Applies the static compression curve after the RMS calculation.</description>
+	<metadatalist>
+		<metadata name="author">Giacomo Presotto</metadata>
+		<metadata name="tag">gen</metadata>
+		<metadata name="tag">dynamic</metadata>
+		<metadata name="tag">compressor</metadata>
+		<metadata name="tag">audio</metadata>
+	</metadatalist>
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>RMS input</digest>
+			<description>RMS signal used to calculate the static compression curve. Also accepts messages.</description>
+		</inlet>
+	</inletlist>
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Compression curve</digest>
+			<description>Static compression curve applied to the RMS signal</description>
+		</outlet>
+	</outletlist>
+	<!--ARGUMENTS-->
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="open">
+			<digest>Open internal Gen patcher</digest>
+			<description>Opens the internal Gen patcher</description>
+		</method>
+		<method name="threshold">
+			<digest>Set compression threshold</digest>
+			<description>Sets the input level above which compression is applied</description>
+			<arguments>
+				<arg name="threshold" type="float" optional="0">
+					<digest>Compression threshold</digest>
+				</arg>
+			</arguments>
+		</method>
+		<method name="ratio">
+			<digest>Set compression ratio</digest>
+			<description>Sets the relationship between the input level above the threshold and the resulting output level</description>
+			<arguments>
+				<arg name="ratio" type="float" optional="0">
+					<digest>Compression ratio</digest>
+				</arg>
+			</arguments>
+		</method>
+	</methodlist>
+	<attributelist>
+		<attribute name="threshold" get="1" set="1" type="float" size="1">
+			<digest>Compression threshold</digest>
+			<description>Sets the input level above which compression is applied</description>
+			<default>0</default>
+		</attribute>
+		<attribute name="ratio" get="1" set="1" type="float" size="1">
+			<digest>Compression ratio</digest>
+			<description>Sets the relationship between the input level above the threshold and the resulting output level</description>
+			<default>1</default>
+		</attribute>
+	</attributelist>
+	<seealsolist>
+		<seealso name="baco.rms"/>
+		<seealso name="baco.gain~"/>
+	</seealsolist>
+</c74object>

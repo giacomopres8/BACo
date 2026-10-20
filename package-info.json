@@ -1,0 +1,81 @@
+
+{
+	"name": "BACo",
+	"displayname": "BACo (Build A Compressor)",
+	"version": "0.1",
+	"author": "Giacomo Presotto",
+	"authors": [],
+	"description": "BACo (Build A Compressor) contains the building blocks of a simple dynamic range compressor, implemented in Gen.",
+	"tags": [
+		"compressor",
+		"dynamic",
+		"audio",
+		"gen"
+	],
+	"website": "",
+	"extends": "",
+	"extensible": 0,
+	"max_version_min": "8.0",
+	"max_version_max": "none",
+	"os": {
+		"macintosh": {
+			"min_version": "10.9.x",
+			"platform": [
+				"aarch64",
+				"x64"
+			]
+		},
+		"windows": {
+			"min_version": "10",
+			"platform": [
+				"x64"
+			]
+		}
+	},
+	"homepatcher": "baco.launch.maxpat",
+	"package_extra": {
+		"reverse_domain": "",
+		"copyright": ""
+	},
+	"filelist": {
+		"examples": [
+			"how_to_BACo.maxpat"
+		],
+		"externals": [
+			""
+		],
+		"patchers": [
+			"baco.rms.maxpat",
+			"baco.curve~.maxpat",
+			"baco.gain~.maxpat"
+		],
+		"help": [
+			"baco.rms.maxhelp",
+			"baco.curve~.maxhelp",
+			"baco.gain~.maxhelp"
+		],
+		"interfaces": [
+			""
+		],
+		"jsui": [
+			""
+		],
+		"media": [
+			""
+		],
+		"misc": [
+			""
+		],
+		"docs": [
+			""
+		],
+		"javascript": [
+			""
+		],
+		"extras": [
+			"baco.launch.maxpat"
+		]
+	},
+	"c74install": 1
+}
+

@@ -1,0 +1,53 @@
+
+<c74object name="baco.rms">
+	<digest>RMS detector</digest>
+	<description>RMS detector similar to <o>average~</o>, used as the first component of a compressor.</description>
+	<metadatalist>
+		<metadata name="author">Giacomo Presotto</metadata>
+		<metadata name="tag">gen</metadata>
+		<metadata name="tag">dynamic</metadata>
+		<metadata name="tag">compressor</metadata>
+		<metadata name="tag">audio</metadata>
+	</metadatalist>
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Input signal</digest>
+			<description>Audio signal used for RMS calculation. Also accepts messages.</description>
+		</inlet>
+	</inletlist>
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>RMS signal</digest>
+			<description>RMS of the input signal</description>
+		</outlet>
+	</outletlist>
+	<!--ARGUMENTS-->
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="open">
+			<digest>Open internal Gen patcher</digest>
+			<description>Opens the internal Gen patcher</description>
+		</method>
+		<method name="window">
+			<digest>Set RMS window length</digest>
+			<description>Sets the window length, in samples, used to calculate the RMS of the input signal</description>
+			<arguments>
+				<arg name="window" type="int" optional="0">
+					<digest>Window length in samples, from 0 to 511</digest>
+				</arg>
+			</arguments>
+		</method>
+	</methodlist>
+	<attributelist>
+		<attribute name="window" get="1" set="1" type="long" size="1">
+			<digest>RMS window length</digest>
+			<description>Sets the window length, in samples, used to calculate the RMS of the input signal</description>
+			<default>16</default>
+		</attribute>
+	</attributelist>
+	<seealsolist>
+		<seealso name="o.average~"/>
+		<seealso name="o.curve~"/>
+		<seealso name="o.gain~"/>
+	</seealsolist>
+</c74object>

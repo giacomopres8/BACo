@@ -1,0 +1,66 @@
+
+<c74object name="baco.gain~">
+	<digest>Attack-release stage</digest>
+	<description>Applies attack and release smoothing to the compression gain.</description>
+	<metadatalist>
+		<metadata name="author">Giacomo Presotto</metadata>
+		<metadata name="tag">gen</metadata>
+		<metadata name="tag">dynamic</metadata>
+		<metadata name="tag">compressor</metadata>
+		<metadata name="tag">audio</metadata>
+	</metadatalist>
+	<inletlist>
+		<inlet id="0" type="signal">
+			<digest>Gain input</digest>
+			<description>Signal from the static compression curve. Also accepts messages.</description>
+		</inlet>
+	</inletlist>
+	<outletlist>
+		<outlet id="0" type="signal">
+			<digest>Smoothed gain</digest>
+			<description>Gain signal smoothed by the attack and release stages</description>
+		</outlet>
+	</outletlist>
+	<!--ARGUMENTS-->
+	<!--MESSAGES-->
+	<methodlist>
+		<method name="open">
+			<digest>Open internal Gen patcher</digest>
+			<description>Opens the internal Gen patcher</description>
+		</method>
+		<method name="attack">
+			<digest>Set attack time</digest>
+			<description>Sets the attack time in seconds</description>
+			<arguments>
+				<arg name="attack" type="float" optional="0">
+					<digest>Attack time in seconds, minimum 0</digest>
+				</arg>
+			</arguments>
+		</method>
+		<method name="release">
+			<digest>Set release time</digest>
+			<description>Sets the release time in seconds</description>
+			<arguments>
+				<arg name="release" type="float" optional="0">
+					<digest>Release time in seconds, minimum 0</digest>
+				</arg>
+			</arguments>
+		</method>
+	</methodlist>
+	<attributelist>
+		<attribute name="attack" get="1" set="1" type="float" size="1">
+			<digest>Attack time</digest>
+			<description>Sets the attack time in seconds</description>
+			<default>0.008</default>
+		</attribute>
+		<attribute name="release" get="1" set="1" type="float" size="1">
+			<digest>Release time</digest>
+			<description>Sets the release time in seconds</description>
+			<default>0.08</default>
+		</attribute>
+	</attributelist>
+	<seealsolist>
+		<seealso name="baco.rms"/>
+		<seealso name="baco.curve~"/>
+	</seealsolist>
+</c74object>
