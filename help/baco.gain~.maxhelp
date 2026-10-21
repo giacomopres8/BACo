@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 178.0, 895.0, 623.0 ],
+		"rect" : [ 34.0, 106.0, 1354.0, 1029.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 895.0, 597.0 ],
+						"rect" : [ 34.0, 132.0, 1354.0, 1003.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -87,6 +87,142 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Times New Roman",
+									"fontsize" : 14.0,
+									"id" : "obj-18",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 30.0, 285.0, 510.0, 22.0 ],
+									"text" : "Different coefficients for attack and release are required, and defined as:",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autofit" : 1,
+									"forceaspect" : 1,
+									"id" : "obj-11",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 85.0, 233.0, 150.0, 29.005524861878452 ],
+									"pic" : "gain-02.png"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Times New Roman",
+									"fontsize" : 14.0,
+									"id" : "obj-10",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 45.0, 240.0, 510.0, 22.0 ],
+									"text" : "with",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"autofit" : 1,
+									"forceaspect" : 1,
+									"id" : "obj-1",
+									"maxclass" : "fpic",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "jit_matrix" ],
+									"patching_rect" : [ 45.0, 180.0, 390.0, 37.709923664122137 ],
+									"pic" : "gain-01.png"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Times New Roman",
+									"fontsize" : 14.0,
+									"id" : "obj-2",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 447.0, 174.0, 180.0, 53.0 ],
+									"text" : "where:\n- n is the current sample;\n- n-1 is the previous sample.",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Times New Roman",
+									"fontsize" : 14.0,
+									"id" : "obj-6",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 30.0, 120.0, 600.0, 38.0 ],
+									"presentation_linecount" : 2,
+									"text" : "The baco.gain~ abstractions applies the desired attack and release to the desired gain.\nThe new target gain (g_target) is obtained with the formulae:",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-16",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 607.0, 359.0, 183.0, 24.0 ],
+									"text" : "click me to show Gen patcher"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 570.0, 360.0, 35.0, 22.0 ],
+									"text" : "open"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"color" : [ 0.92549, 0.364706, 0.341176, 1.0 ],
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 570.0, 390.0, 68.0, 22.0 ],
+									"text" : "baco.gain~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 13.0,
+									"id" : "obj-17",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 10.0, 69.599853515625, 274.0, 21.0 ],
+									"text" : "Details."
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"fontface" : 1,
 									"fontsize" : 38.0,
@@ -146,7 +282,7 @@
 								"box" : 								{
 									"angle" : 270.0,
 									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bordercolor" : [ 0.235, 0.235, 0.235, 1.0 ],
 									"id" : "obj-9",
 									"maxclass" : "panel",
 									"mode" : 0,
@@ -166,59 +302,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 13.0,
-									"id" : "obj-17",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 10.0, 69.599853515625, 274.0, 21.0 ],
-									"text" : "A more advanced use of all the parameters."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-12",
-									"local" : 1,
-									"maxclass" : "ezdac~",
-									"numinlets" : 2,
-									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 285.0, 45.0, 45.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"channels" : 1,
-									"id" : "obj-10",
-									"lastchannelcount" : 0,
-									"maxclass" : "live.gain~",
-									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "signal", "", "float", "list" ],
-									"parameter_enable" : 1,
-									"patching_rect" : [ 15.0, 135.0, 48.0, 136.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_initial" : [ -70 ],
-											"parameter_initial_enable" : 1,
-											"parameter_longname" : "gain[2]",
-											"parameter_mmax" : 6.0,
-											"parameter_mmin" : -70.0,
-											"parameter_modmode" : 3,
-											"parameter_shortname" : "gain",
-											"parameter_type" : 0,
-											"parameter_unitstyle" : 4
-										}
-
-									}
-,
-									"varname" : "gain"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"border" : 0,
 									"filename" : "helpname.js",
 									"id" : "obj-5",
@@ -233,20 +316,25 @@
 								}
 
 							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-12", 1 ],
-									"order" : 0,
-									"source" : [ "obj-10", 0 ]
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"id" : "obj-8",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 105.0, 630.0, 330.0 ],
+									"proportion" : 0.5
 								}
 
 							}
-, 							{
+ ],
+						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
-									"order" : 1,
-									"source" : [ "obj-10", 0 ]
+									"source" : [ "obj-15", 0 ]
 								}
 
 							}
@@ -284,7 +372,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 134.0, 204.0, 895.0, 597.0 ],
+						"rect" : [ 0.0, 26.0, 1354.0, 1003.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 13.0,
@@ -373,7 +461,7 @@
 								"box" : 								{
 									"angle" : 270.0,
 									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"bordercolor" : [ 0.235, 0.235, 0.235, 1.0 ],
 									"id" : "obj-7",
 									"maxclass" : "panel",
 									"mode" : 0,
@@ -747,20 +835,6 @@
 			}
  ],
 		"lines" : [  ],
-		"parameters" : 		{
-			"obj-4::obj-10" : [ "gain[2]", "gain", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "baco.curve.gendsp",
 				"bootpath" : "~/Documents/Max 8/Packages/BACo/code",
@@ -807,6 +881,20 @@
 				"name" : "drumLoop.aif",
 				"bootpath" : "C74:/media/msp",
 				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gain-01.png",
+				"bootpath" : "~/Documents/Max 8/Packages/BACo/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "gain-02.png",
+				"bootpath" : "~/Documents/Max 8/Packages/BACo/media",
+				"patcherrelativepath" : "../media",
+				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{

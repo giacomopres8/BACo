@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 143.0, 892.0, 360.0, 220.0 ],
+		"rect" : [ -28.0, 829.0, 360.0, 220.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -337,7 +337,7 @@
 				"box" : 				{
 					"angle" : 270.0,
 					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"bordercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bordercolor" : [ 0.235, 0.235, 0.235, 1.0 ],
 					"id" : "obj-5",
 					"maxclass" : "panel",
 					"mode" : 0,
@@ -373,7 +373,7 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.235, 0.235, 0.235, 1.0 ],
 					"id" : "obj-11",
 					"maxclass" : "panel",
 					"mode" : 0,
